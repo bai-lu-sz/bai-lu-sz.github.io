@@ -1,0 +1,75 @@
+什么是github pages
+    github中的一个服务，static site hosting service
+    中文是 静态站点托管服务
+    静态，表示不支持服务端的代码： php ruby python
+    2016年6月15，github pages网站创建，https方式
+
+github pages限制
+    1GB
+    每月100GB流量
+    10次build / 每小时
+
+配置发布源
+    可以从项目的master分支或是其他分支(达到一定条件)中选取源文件
+    作为站点的源文件，这是通过github pages来配置的
+    通过配置还可以具体到分支中的哪个文件夹：
+        master
+        gh-pages
+        /docs
+    在github中创建一个仓库 bai-lu-sz.github.io  我的用户名就是bai-lu-sz
+    因为是用户，只能从master分支进行发布
+
+	在github网页端，仓库项目的设置中，github pages选项中设置发布配置
+	
+关系
+	github是一个代码托管平台，除了把项目代码托管到github以外
+	还可以把静态网页托管到github中，通过github pages来显示网页内容
+	
+	上面介绍了把静态网页托管到github，再通过github pages配置来显示网页
+	下面介绍github官方推荐工具jekyll来创建静态网页
+	
+jekyll
+	把纯文本变成静态网页和博客
+	没有数据库 没有评论系统  没有更新  只有内容
+	
+	静态网页
+	
+	博客相关：永久连接 类别 页面 自定义布局 
+	
+	安装查看官网即可，用我的是windows，更新版本之后在应用商店安装ubuntu之后可用
+	jekyll --help
+	在ruby环境下，博客和静态站点生成工具
+	
+	jekyll包含几个目录，这几个目录包含一些原始文件，这个文件的格式各不相同
+	通过一个工具来运行(markdown 或是liquid渲染器)来跑
+	最后生成一个完整的，可发布的静态站点到你喜欢的网站
+	同时jekyll是github pages的后来引擎，换句话说：
+		用jekyll生成的站点，放在github pages中展示，是完全兼容的
+	所以github中的首页，个人博客，网站站点都可以用这玩意来搞
+	
+	jekyll 是一个txt转换引擎
+		整个系统背后的概念是：用标记语言写成的txt，
+			标记语言可以是markdown，textile，或是纯html，
+			通过jekyll的转换，你可以看到一个站点url，数据按布局显示
+			最终的产出是一个静态站点
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
